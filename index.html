@@ -4,43 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Youssef Naceur | Portfolio</title>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>heres what you need to know about me</p>
-    <nav class="navbar">
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    
-  </body>
-  </html>
-  
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header>
+<body class="light">
+
+  <header class="fade-in">
     <h1>Youssef Naceur</h1>
     <p>Aged 14 | Languages: French, Arabic, English</p>
+    <button id="toggleMode">🌙 Dark Mode</button>
   </header>
 
-  <section class="about">
+  <nav class="navbar fade-in">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about fade-in">
     <h2>About Me</h2>
     <p>
       Hi! I'm Youssef, a 14-year-old web enthusiast passionate about front-end development.
-      I create cool websites using HTML, CSS, and JavaScript. I love learning new things and building fun projects.
+      I create cool websites using HTML, CSS, and JavaScript.
     </p>
   </section>
 
-  <section class="skills">
+  <section id="skills" class="skills fade-in">
     <h2>Skills</h2>
     <ul>
       <li>HTML</li>
@@ -49,7 +37,7 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section id="contact" class="contact fade-in">
     <h2>Contact Me</h2>
     <form id="contactForm">
       <input type="text" id="name" placeholder="Your Name" required />
@@ -59,8 +47,7 @@
     </form>
     <p id="response"></p>
   </section>
-  <script src="script.js">console.log ("Sigma")
-  </script>
+
+  <script src="index.js"></script>
 </body>
 </html>
-``
